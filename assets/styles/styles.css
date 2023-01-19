@@ -1,0 +1,474 @@
+@import url('./primary-styles.css');
+
+/*
+ *  GLOBAL VARIABLES
+ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-blue-dark);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+ *  HEADER 
+ */
+
+header {
+    width: 100%;
+    height: 75px;
+    background-image: url('../img/header half ellipse.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+}
+
+
+/* HEADER NAV */
+
+.header-ul {
+    display: flex;
+    flex-direction: row;
+    gap: 66px;
+}
+
+.primary-icon {
+    position: absolute;
+    top: 30px;
+    left: 295px;
+}
+
+/*
+ *  HOME SECTION
+ */
+
+.home-section {
+    width: 100%;
+    height: 1080px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+}
+
+/* INTRO */
+
+.intro {
+    width: 1200px;
+    height: 230px;
+    margin: 80px 0;
+
+    display: flex;
+    flex-direction: row;
+    gap: 180px;
+}
+
+.intro-title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.intro-search-bar-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.intro-caption-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.home-section-img-base,
+.home-section-img-middle,
+.home-section-img-front {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.home-section-img-base {
+    top: 0;
+}
+
+.home-section-img-middle {
+    top: 165px;
+}
+
+.home-section-img-front {
+    top: 170px;
+}
+
+/*
+ *  CATALOG SECTION
+ */
+
+.catalog-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog-section-wrapper {
+    width: 1450px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.catalog-box {
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.catalog-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tombstones-box {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+
+    position: relative;
+}
+
+.tombstone-1-box,
+.tombstone-2-box,
+.tombstone-3-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.tombstone-1-box,
+.tombstone-3-box {
+    gap: 100px;
+}
+
+.tombstone-2-box {
+    gap: 20px;
+}
+
+.tombstone-1,
+.tomstone-2 {
+    width: 325px;
+}
+
+.tomstone-2 {
+    width: 575px;
+}
+
+.tombstones-box-btns {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+}
+
+.tombstone-box-btn-left,    
+.tombstone-box-btn-right {
+    cursor: pointer;
+}
+
+.catalog-section-description {
+    width: 1200px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 170px;
+}
+
+.galery-description-box,
+.catalog-description-box {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.catalog-slogans-box {
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: row;
+    gap: 170px;
+}
+
+.catalog-slogan-1-box,
+.catalog-slogan-2-box,
+.catalog-slogan-3-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.catalog-slogan-1,
+.catalog-slogan-2,
+.catalog-slogan-3 {
+    width: 50px;
+}
+
+.catalog-slogan-caption-1,
+.catalog-slogan-caption-2,
+.catalog-slogan-caption-3 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 20px;
+    text-align: center;
+
+    color: var(--primary-blue);
+
+}
+
+/*
+ *  ABOUT OFFICE SECTION
+ */
+
+.about-office-section {
+    width: 100%;
+    height: 890px;
+
+    background-image: url('../img/granite background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-office-wrapper {
+    padding-top: 60px;
+    padding-left: 665px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    
+}
+
+.about-office-title-box {
+    width: 580px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    text-align: center;
+}
+
+.about-office-caption {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--primary-blue-dark);
+
+}
+
+.working-hours-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: var(--primary-blue-dark);
+}
+
+.working-hours-weekdays-box {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.weekdays,
+.working-hours {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.07em;
+    color: var(--primary-blue-dark);
+}
+
+/*
+ *  DESIGN SECTION
+ */
+
+.design-section {
+    padding: 70px 330px;
+}
+
+.design-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.design-section-slogans-box-1,
+.design-section-slogans-box-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 170px;
+
+}
+
+.design-section-slogan-1-box,
+.design-section-slogan-2-box,
+.design-section-slogan-3-box,
+.design-section-slogan-4-box,
+.design-section-slogan-5-box,
+.design-section-slogan-6-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.design-section-slogan-1,
+.design-section-slogan-2,
+.design-section-slogan-3,
+.design-section-slogan-4,
+.design-section-slogan-5,
+.design-section-slogan-6 {
+    width: 50px;
+}
+
+.design-section-slogan-caption-1,
+.design-section-slogan-caption-2,
+.design-section-slogan-caption-3,
+.design-section-slogan-caption-4,
+.design-section-slogan-caption-5,
+.design-section-slogan-caption-6 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 20px;
+    text-align: center;
+
+    color: var(--primary-blue);
+}
+
+.design-box {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+
+.design-section-monument-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.design-title-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/*
+ *  FOOTER
+ */
+
+.footer-wrapper {
+    margin: 150px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.footer-social-links-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+}
+
+.footer-social-links,
+.footer-contact-box {
+    display: flex;
+    flex-direction: center;
+    gap: 25px;
+}
+
+.whatsup-box,
+.email-box {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.whatsup-caption, 
+.email-caption,
+.footer-address {
+    font-size: 20px;
+    color: var(--primary-blue);
+}

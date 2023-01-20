@@ -4,25 +4,6 @@
  *  GLOBAL VARIABLES
  */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: var(--primary-blue-dark);
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    cursor: pointer;
-}
-
 img {
     max-width: 100%;
 }
@@ -241,44 +222,6 @@ header {
     gap: 25px;
 }
 
-.catalog-slogans-box {
-    margin-bottom: 90px;
-    display: flex;
-    flex-direction: row;
-    gap: 170px;
-}
-
-.catalog-slogan-1-box,
-.catalog-slogan-2-box,
-.catalog-slogan-3-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-}
-
-.catalog-slogan-1,
-.catalog-slogan-2,
-.catalog-slogan-3 {
-    width: 50px;
-}
-
-.catalog-slogan-caption-1,
-.catalog-slogan-caption-2,
-.catalog-slogan-caption-3 {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    font-style: italic;
-    text-transform: uppercase;
-    line-height: 20px;
-    text-align: center;
-
-    color: var(--primary-blue);
-
-}
-
 /*
  *  ABOUT OFFICE SECTION
  */
@@ -286,6 +229,7 @@ header {
 .about-office-section {
     width: 100%;
     height: 890px;
+    margin-top: 90px;
 
     background-image: url('../img/granite background.png');
     background-repeat: no-repeat;
@@ -311,16 +255,6 @@ header {
     align-items: center;
 
     text-align: center;
-}
-
-.about-office-caption {
-    font-family: 'Darker Grotesque';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
-    color: var(--primary-blue-dark);
-
 }
 
 .working-hours-title {
@@ -363,53 +297,6 @@ header {
     justify-content: center;
     align-items: center;
     gap: 70px;
-}
-
-.design-section-slogans-box-1,
-.design-section-slogans-box-2 {
-    display: flex;
-    flex-direction: row;
-    gap: 170px;
-
-}
-
-.design-section-slogan-1-box,
-.design-section-slogan-2-box,
-.design-section-slogan-3-box,
-.design-section-slogan-4-box,
-.design-section-slogan-5-box,
-.design-section-slogan-6-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-}
-
-.design-section-slogan-1,
-.design-section-slogan-2,
-.design-section-slogan-3,
-.design-section-slogan-4,
-.design-section-slogan-5,
-.design-section-slogan-6 {
-    width: 50px;
-}
-
-.design-section-slogan-caption-1,
-.design-section-slogan-caption-2,
-.design-section-slogan-caption-3,
-.design-section-slogan-caption-4,
-.design-section-slogan-caption-5,
-.design-section-slogan-caption-6 {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    font-style: italic;
-    text-transform: uppercase;
-    line-height: 20px;
-    text-align: center;
-
-    color: var(--primary-blue);
 }
 
 .design-box {

@@ -1,126 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galery</title>
+
+    <title>Davydov Tombstones</title>
+
+    <!-- Resource of Page's Styles -->
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <link rel="stylesheet" href="./assets/styles/primary-styles.css">
-    <link rel="stylesheet" href="./assets/styles/contact-page.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Dela+Gothic+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Noto+Sans+Georgian:wght@100;200;300;400;500;600;700;800;900&family=Odibee+Sans&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link 
-        rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./assets/styles/catalog-galery.css">
-    <style>
-        .active-page {
-            color: #ffffff !important;
-            border-bottom: 2px solid #ffffff;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/styles/contact-page/contact-page.css">
 </head>
+
 <body>
     <div class="wrapper">
-        <main>
+        <div class="content">
             <header>
                 <nav class="header-nav">
-                    <ul class="header-ul">
+                    <ul>
                         <li>
-                            <a class="primary-header-link" href="home.html">home</a>
+                            <a class="primary-page-link" href="./home.html">home</a>
                         </li>
                         <li>
-                            <a class="primary-header-link" href="catalog.html">catalog</a>
+                            <a class="primary-page-link" href="./catalog.html">catalog</a>
                         </li>
                         <li>
-                            <a class="primary-header-link" href="galery.html">galery</a>
+                            <a class="primary-page-link" href="./galery.html">galery</a>
                         </li>
                         <li>
-                            <a class="primary-header-link active-page" href="contact.html">contact</a>
+                            <a class="primary-page-link primary-active-page" href="./contact.html">contact</a>
                         </li>
                     </ul>
                 </nav>
-                <img class="primary-icon" src="./assets/img/lightbulb.png" alt="the lightbulb icon">
             </header>
-            <section class="contact-section">
-                <div class="contact-title-box">
-                    <h1 class="primary-title-lil">
-                        Make Appointment
-                    </h1>
-                    <p class="contact-caption">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda excepturi officia architecto magnam ipsam vel deleniti, labore voluptatibus inventore hic asperiores dignissimos rem quae facilis quas ut illo aspernatur quisquam.
-                    </p>
-                </div>
-                <div class="working-hours-box">
-                    <h1 class="working-hours-title weekdays-color">
-                        business hours
-                    </h1>
-                    <div class="working-hours-weekdays-box">
-                        <div class="working-hours-weekdays">
-                            <p class="weekdays weekdays-color">sunday</p>
-                            <p class="weekdays weekdays-color">monday</p>
-                            <p class="weekdays weekdays-color">tuesday</p>
-                            <p class="weekdays weekdays-color">wednesday</p>
-                            <p class="weekdays weekdays-color">thursday</p>
-                            <p class="weekdays weekdays-color">friday</p>
-                            <p class="weekdays weekdays-color">saturday</p>
-                        </div>
-                        <div class="working-hours-box">
-                            <p class="working-hours weekdays-color">closed</p>
-                            <p class="working-hours weekdays-color">10:00am - 17:00pm</p>
-                            <p class="working-hours weekdays-color">10:00am - 17:00pm</p>
-                            <p class="working-hours weekdays-color">12:00am - 19:00pm</p>
-                            <p class="working-hours weekdays-color">10:00am - 17:00pm</p>
-                            <p class="working-hours weekdays-color">10:00am - 17:00pm</p>
-                            <p class="working-hours weekdays-color">closed</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="survey-form-box">
-                    <form action="">
-                        <input class="survey-form-input" type="text" placeholder="First Name" />
-                        <input class="survey-form-input" type="text" placeholder="Second Name" />
-                        <input class="survey-form-input" type="text" placeholder="Family Name" />
-                        <input class="survey-form-input" type="email" placeholder="Email" />
-                        <input class="survey-form-input" type="tel" placeholder="Mobile Number" />
-                        <textarea class="text-area" name="" id="" rows="3" cols="30" placeholder="Message"></textarea>
-                        <input class="survey-form-btn" type="submit"/>
-                    </form>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footer-wrapper">
-                <div class="footer-social-links-box">
-                    <div class="footer-social-links">
-                        <i class="fa-brands fa-youtube primary-link-icon"></i>
-                        <i class="fa-brands fa-facebook primary-link-icon"></i>
-                        <i class="fa-brands fa-instagram primary-link-icon"></i>
-                    </div>
-                    <div class="footer-contact-box">
-                        <div class="whatsup-box">
-                            <i class="fa-brands fa-whatsapp primary-link-icon"></i>
-                            <p class="whatsup-caption">+1 123 123 12 12</p>
-                        </div>
-                        <div class="email-box">
-                            <i class="fa-regular fa-envelope primary-link-icon"></i>
-                            <p class="email-caption">mail123@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="address-box">
-                        <p class="footer-address">
-                            67-34 Metropolitan Ave, Middle Village, NY 11379
+            <main>
+                <section class="contact-section">
+                    <div class="contact-title-box">
+                        <h1 class="primary-title-lil">
+                            Make Appointment
+                        </h1>
+                        <p class="contact-caption">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda excepturi officia
+                            architecto magnam ipsam vel deleniti, labore voluptatibus inventore hic asperiores
+                            dignissimos rem quae facilis quas ut illo aspernatur quisquam.
                         </p>
                     </div>
-                </div>
-                <img src="./assets/img/address img.png" alt="image of address in google map">
-            </div>
-        </footer>
+                    <div class="working-hours-container">
+                        <div class="working-hours" style="background-image: url(./assets/img/workingHours/workingHours-primary-blue.png)"></div>
+                    </div>
+                    <div class="survey-form-box">
+                        <form action="">
+                            <input class="survey-form-input" type="text" placeholder="First Name" />
+                            <input class="survey-form-input" type="text" placeholder="Second Name" />
+                            <input class="survey-form-input" type="text" placeholder="Family Name" />
+                            <input class="survey-form-input" type="email" placeholder="Email" />
+                            <input class="survey-form-input" type="tel" placeholder="Mobile Number" />
+                            <textarea class="text-area" name="" id="" rows="3" cols="30"
+                                placeholder="Message"></textarea>
+                            <input class="survey-form-btn" type="submit" />
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <footer></footer>
+        </div>
     </div>
-    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

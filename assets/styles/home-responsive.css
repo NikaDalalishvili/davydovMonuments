@@ -1,0 +1,182 @@
+@media(max-width: 390px) {
+    /* SLOGAN CONTAINER | SLOGAN BOX */
+    .slogans-container {
+        gap: 32px;
+    }
+
+    .slogan-box {
+        width: 82px;
+    }
+
+    /* HEADER */
+    header {
+        display: none;
+    }
+
+    .header-btn-wrapper {
+        margin-right: 16px; 
+        display: flex;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    /* HOME SECTION */
+    .home-section {
+        height: 100%;
+    }
+
+    .home-section::after {
+        height: 460px;
+        top: 1.5px;
+        bottom: auto;
+    }
+
+    .home-section-backgorund-container {
+        height: 460px;
+        position: relative;
+    }
+
+    .intro-wrapper {
+        margin: 10px 0 0;
+    }
+
+    .intro-title-box {
+        display: none;
+    }
+
+    .intro-search-bar-box {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .intro-caption-box {
+        align-items: center;
+        text-align: center;
+    }
+    
+    /* TOMBSTONE SECTION */
+    .tombstone-section-wrapper{
+        margin: 66px 0 30px;
+        gap: 30px;
+    }
+
+    .tombstone-section-description {
+        gap: 15px;
+    }
+
+    .galary-description-box,
+    .catalog-description-box {
+        width: 290px;
+        gap: 5px;
+    }
+
+    /* ABOUT OFFICE SECTION */
+    .about-office-section {
+        height: 100%;
+    }
+
+    .about-office-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .about-office-background {
+        height: 350px;
+        background-position: 5%;
+    }
+
+    .about-office-content {
+        padding: 75px 0 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .about-office-title-container {
+        width: 320px;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 35px;
+    }
+    
+    .about-office-title {
+        font-size: 24px;
+        line-height: 30px;
+        color: var(--primary-white);
+        inline-size: 110px;
+        overflow-wrap: break-word;
+        text-align: center;
+    }
+
+    .about-office-caption {
+        font-size: 12px;
+        line-height: 12px;
+        color: white;
+        inline-size: 320px;
+        overflow-wrap: break-word;
+    }
+
+    .working-hours-container {
+        width: 250px;
+        height: 179px;
+    }
+
+    .home-working-hours-color {
+        background-image: url(.././img/workingHours/workingHours-primary-blue.png);
+    }
+
+
+
+    /* DESIGN SECTION */
+    .design-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .design-section-wrapper {
+        padding-bottom: 30px;;
+    }
+    
+    .design-section-content {
+        gap: 40px;
+    }
+    
+    .design-caption {
+        inline-size: 300px;
+    }
+    
+    /* FOOTER */
+    .footer-wrapper {
+        padding: 50px 0;
+        gap: 25px;
+    }
+
+    .footer-social-links-container {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    
+    .footer-social-links {
+        gap: 40px;
+    }
+
+    .footer-contact-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer-address {
+        inline-size: 300px;
+    }
+
+    .footer-location-img {
+        height: 300px;
+
+        background-position: 75%;
+    }
+}

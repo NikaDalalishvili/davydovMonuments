@@ -41,6 +41,10 @@ button {
     border-bottom: 2px solid #ffffff;
 }
 
+main {
+    margin-top: 75px;
+}
+
 /*
  *  PRIMARY LINKS
  */

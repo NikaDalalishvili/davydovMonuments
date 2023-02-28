@@ -1,6 +1,6 @@
 :root {
 	--index: calc(1vw + 1vh);
-	--transition: transform .75s cubic-bezier(.075, .5, 0, 1);
+	--transition: transform .75s cubic-bezier(.75, .5, 0, 1);
 }
 
 /*
@@ -46,7 +46,9 @@ main {
 header {
     width: 100%;
     height: 75px;
-    z-index: 1000;
+    position: fixed;
+    top: 0;
+    z-index: 3;
 }
 
 .header-wrapper {
@@ -62,7 +64,7 @@ header {
     width: 1080px;
     height: 100%;
 
-    background-image: url('../img/headerImgs/halfEllipse.png');
+    background-image: url('../img/headerImgs/halfEllipse copy.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -78,32 +80,98 @@ header {
     gap: 66px;
 }
 
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: none;
+    z-index: 10;
+    background-color: var(--primary-blue-dark);
+    padding-top: 120px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s
+}
+
+.mobile-nav.is-active {
+    left: 0
+}
+
+.mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: var(--primary-gray);
+    color: #FFF;
+    text-decoration: none;
+    transform: var(--scrollTop);
+}
+
+.mobile-nav a:hover {
+    background-color: var(--primary-blue-li);
+}
+
+/* PAGE LOGO */
+
+.logo {
+    display: none;
+    width: 50px;
+    height: 35px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 11;
+}
+
 /* HAMBURGER BUTTON */
 
-.header-btn-wrapper {
-    width: 100%;
-
-    display: none;
-    justify-content: flex-end;
-    align-items: center;
-
-    position: relative;
-}
-
 .header-hamburger-btn {
+    position: relative;
+    display: none;
     width: 35px;
-
-    display: block;
-    
+    cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background: none;
     appearance: none;
+    background: none;
     outline: none;
     border: none;
-
-    z-index: 1;
+    z-index: 11;
 }
+
+.header-hamburger-btn .hamburger-btn-bar,
+.header-hamburger-btn:after,
+.header-hamburger-btn:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #FFF;
+    margin: 6px 0px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s
+}
+
+.header-hamburger-btn.is-active:before {
+    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px)
+}
+
+.header-hamburger-btn.is-active:after {
+    -webkit-transform: rotate(45deg) translate(-9px, -8px);
+    transform: rotate(45deg) translate(-9px, -8px)
+}
+
+.header-hamburger-btn.is-active .hamburger-btn-bar {
+    opacity: 0
+}
+
 
 /*
  *  HOME SECTION
@@ -226,15 +294,19 @@ header {
 /* INTRO */
 
 .intro-wrapper {
-    width: 65%;
     margin: 80px 0;
 
     display: flex;
-    flex-direction: row;
-    gap: 20%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+
+    z-index: 2;
 }
 
 .intro-title-box {
+    width: 450px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -243,6 +315,7 @@ header {
 }
 
 .intro-search-bar-box {
+    width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -358,9 +431,10 @@ header {
 }
 
 .about-office-content {
-    padding: 60px 160px 0 0;
+    padding: 60px 160px 0;
 
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -443,7 +517,9 @@ header {
 }
 
 .design-box {
+    padding: 0 50px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 150px;
 }

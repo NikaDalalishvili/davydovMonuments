@@ -1,3 +1,10 @@
+@media(max-width: 1080px) {
+    .primary-active-page {
+        border: 2px solid var(--primary-white);
+        background-color: var(--primary-gray) !important;
+    }
+}
+
 @media(max-width: 390px) {
     .primary-title {
         font-size: 24px;
@@ -21,5 +28,5 @@
 
     .primary-icon {
         font-size: 26px;
-    }
+    }  
 }

@@ -11,7 +11,7 @@
 	<script src="./assets/libs/gsap/ScrollTrigger.min.js" defer></script>
 	<script src="./assets/libs/gsap/ScrollSmoother.min.js" defer></script>
     <!-- PARALLAX SCROLLING -->
-    <script src="./assets/js/scroll.js" defer></script>
+    <!-- <script src="./assets/js/scroll.js" defer></script> -->
 
     <!-- Resource of Page's Styles -->
     <link rel="stylesheet" href="./assets/styles/primary-styles.css">
@@ -41,50 +41,102 @@
                             </li>
                         </ul>
                     </nav>
+                    <a href="./index.html">
+                        <div class="logo" style="background-image: url(./assets/img/headerImgs/logo.png)"></div>
+                    </a>
+                    <button class="header-hamburger-btn">
+                        <div class="hamburger-btn-bar"></div>
+                    </button>
+                    <nav class="mobile-nav">
+                        <ul>
+                            <li>
+                                <a class="primary-page-link" href="./index.html">home</a>
+                            </li>
+                            <li>
+                                <a class="primary-page-link primary-active-page" href="./catalog.html">catalog</a>
+                            </li>
+                            <li>
+                                <a class="primary-page-link" href="./galery.html">galery</a>
+                            </li>
+                            <li>
+                                <a class="primary-page-link" href="./contact.html">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </header>
-            <main>
-                <section class="catalog-section">
-                    <div class="search-box">
-                        <input
-                            class="primary-search-bar"
-                            id="primary-search-bar"
-                            type="search"
-                            placeholder="Search product name here.."
-                        />
-                        <button class="primary-search-btn" id="primary-search-btn">Search</button>
-                    </div>
-                    <div class="radio-btns-wrapper" id="buttons">
-                        <button class="radio-btn" onclick="filterProduct('all')">All</button>
-                        <button class="radio-btn" onclick="filterProduct('Jewish')">Jewish</button>
-                        <button class="radio-btn" onclick="filterProduct('Catholic')">Catholic</button>
-                        <button class="radio-btn" onclick="filterProduct('Islamic')">Islamic</button>
-                        <button class="radio-btn" onclick="filterProduct('Asian')">Asian</button>
-                        <button class="radio-btn" onclick="filterProduct('single')">single</button>
-                        <button class="radio-btn" onclick="filterProduct('double')">double</button>
-                    </div>
-                    <div class="products-box" id="products-box">
-                        <div class="product-card">
-                            <div class="product-img-box">
-                                <img class="product-img" src="./assets/img/catalogImgs/DMG0002M.jpg" alt="">
-                                <!-- <div class="product-img" style="background-image: url(./assets/img/catalogImgs/DMGA20015M.jpg)"></div> -->
+            <div class="smooth-wrapper">
+                <div class="smooth-content">
+                    <main>
+                        <section class="catalog-section">
+                            <div class="search-box">
+                                <input class="primary-search-bar" id="primary-search-bar" type="search"
+                                    placeholder="Search product name here.." />
+                                <button class="primary-search-btn" id="primary-search-btn">Search</button>
                             </div>
-                            <div class="product-caption-box">
-                                <p class="product-caption">DMG0002M</p>
-                                <p class="product-caption">black</p>
-                                <p class="product-caption">double</p>
-                                <p class="product-caption">buddhist</p>
-                                <p class="product-caption">width 32 inch</p>
+                            <div class="radio-btns-wrapper" id="buttons">
+                                <button class="radio-btn" onclick="filterProduct('all')">All</button>
+                                <button class="radio-btn" onclick="filterProduct('Jewish')">Jewish</button>
+                                <button class="radio-btn" onclick="filterProduct('Catholic')">Catholic</button>
+                                <button class="radio-btn" onclick="filterProduct('Islamic')">Islamic</button>
+                                <button class="radio-btn" onclick="filterProduct('Asian')">Asian</button>
+                                <button class="radio-btn" onclick="filterProduct('single')">single</button>
+                                <button class="radio-btn" onclick="filterProduct('double')">double</button>
+                            </div>
+                            <div class="products-box" id="products-box">
+                                <div class="product-card">
+                                    <div class="product-img-box">
+                                        <img class="product-img" src="./assets/img/catalogImgs/DMG0002M.jpg" alt="">
+                                        <!-- <div class="product-img" style="background-image: url(./assets/img/catalogImgs/DMGA20015M.jpg)"></div> -->
+                                    </div>
+                                    <div class="product-caption-box">
+                                        <p class="product-caption">DMG0002M</p>
+                                        <p class="product-caption">black</p>
+                                        <p class="product-caption">double</p>
+                                        <p class="product-caption">buddhist</p>
+                                        <p class="product-caption">width 32 inch</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                    <footer>
+                        <div class="footer-wrapper">
+                            <div class="footer-social-links-container">
+                                <div class="footer-social-links">
+                                    <i class="fa-brands fa-youtube primary-icon"></i>
+                                    <i class="fa-brands fa-facebook primary-icon"></i>
+                                    <i class="fa-brands fa-instagram primary-icon"></i>
+                                </div>
+                                <div class="footer-contact-container">
+                                    <div class="whatsup-box">
+                                        <i class="fa-brands fa-whatsapp primary-icon"></i>
+                                        <p class="whatsup-caption">+1 123 123 12 12</p>
+                                    </div>
+                                    <div class="email-box">
+                                        <i class="fa-regular fa-envelope primary-icon"></i>
+                                        <p class="email-caption">mail123@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="footer-address-container">
+                                    <p class="footer-address">
+                                        67-34 Metropolitan Ave, Middle Village, NY 11379
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="footer-location-img" style="background-image: url(./assets/img/location.png)">
                             </div>
                         </div>
-                    </div>
-                </section>
-            </main>
-            <footer></footer>
+                    </footer>
+                </div>
+            </div>
         </div>
     </div>
 </body>
 <!-- CATALOG SCRIPT | CATALOG DATA -->
 <script src="./assets/js/catalogPage/catalogData.js"></script>
+
+<!-- HAMBURGER MENU -->
+<script src="./assets/js/hamburgerMenu.js"></script>
 
 </html>

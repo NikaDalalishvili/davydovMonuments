@@ -8,10 +8,19 @@
 
     <title>Davydov Tombstones</title>
 
+    <!-- GSAP LIBRARY | SCROLL -->
+    <script src="./assets/libs/gsap/gsap.min.js" defer></script>
+	<script src="./assets/libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="./assets/libs/gsap/ScrollSmoother.min.js" defer></script>
+    <!-- PARALLAX SCROLLING -->
+    <!-- <script src="./assets/js/scroll.js" defer></script> -->
+
     <!-- Resource of Page's Styles -->
-    <link rel="stylesheet" href="./assets/styles/styles.css">
     <link rel="stylesheet" href="./assets/styles/primary-styles.css">
-    <link rel="stylesheet" href="./assets/styles/contact-page/contact-page.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./assets/styles/home-responsive.css">
+    <link rel="stylesheet" href="./assets/styles/primary-styles-responsive.css">
+    <link rel="stylesheet" href="./assets/styles/galery-page/galery-page.css">
 </head>
 
 <body>
@@ -35,40 +44,98 @@
                             </li>
                         </ul>
                     </nav>
+                    <a href="./index.html">
+                        <div class="logo" style="background-image: url(./assets/img/headerImgs/logo.png)"></div>
+                    </a>
+                    <button class="header-hamburger-btn">
+                        <div class="hamburger-btn-bar"></div>
+                    </button>
+                    <nav class="mobile-nav">
+                        <ul>
+                            <li>
+                                <a class="primary-page-link" href="./index.html">home</a>
+                            </li>
+                            <li>
+                                <a class="primary-page-link" href="./catalog.html">catalog</a>
+                            </li>
+                            <li>
+                                <a class="primary-page-link" href="./galery.html">galery</a>
+                            </li>
+                            <li>
+                                <a class="primary-page-link primary-active-page" href="./contact.html">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </header>
-            <main>
-                <section class="contact-section">
-                    <div class="contact-title-box">
-                        <h1 class="primary-title-lil">
-                            Make Appointment
-                        </h1>
-                        <p class="contact-caption">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda excepturi officia
-                            architecto magnam ipsam vel deleniti, labore voluptatibus inventore hic asperiores
-                            dignissimos rem quae facilis quas ut illo aspernatur quisquam.
-                        </p>
-                    </div>
-                    <div class="working-hours-container">
-                        <div class="working-hours" style="background-image: url(./assets/img/workingHours/workingHours-primary-blue.png)"></div>
-                    </div>
-                    <div class="survey-form-box">
-                        <form action="">
-                            <input class="survey-form-input" type="text" placeholder="First Name" />
-                            <input class="survey-form-input" type="text" placeholder="Second Name" />
-                            <input class="survey-form-input" type="text" placeholder="Family Name" />
-                            <input class="survey-form-input" type="email" placeholder="Email" />
-                            <input class="survey-form-input" type="tel" placeholder="Mobile Number" />
-                            <textarea class="text-area" name="" id="" rows="3" cols="30"
-                                placeholder="Message"></textarea>
-                            <input class="survey-form-btn" type="submit" />
-                        </form>
-                    </div>
-                </section>
-            </main>
-            <footer></footer>
+            <div class="smooth-wrapper">
+                <div class="smooth-content">
+                    <main>
+                        <section class="contact-section">
+                            <div class="contact-title-box">
+                                <h1 class="primary-title-lil">
+                                    Make Appointment
+                                </h1>
+                                <p class="contact-caption">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda excepturi officia
+                                    architecto magnam ipsam vel deleniti, labore voluptatibus inventore hic asperiores
+                                    dignissimos rem quae facilis quas ut illo aspernatur quisquam.
+                                </p>
+                            </div>
+                            <div class="working-hours-container">
+                                <div class="working-hours"
+                                    style="background-image: url(./assets/img/workingHours/workingHours-primary-blue.png)">
+                                </div>
+                            </div>
+                            <div class="survey-form-box">
+                                <form action="">
+                                    <input class="survey-form-input" type="text" placeholder="First Name" />
+                                    <input class="survey-form-input" type="text" placeholder="Second Name" />
+                                    <input class="survey-form-input" type="text" placeholder="Family Name" />
+                                    <input class="survey-form-input" type="email" placeholder="Email" />
+                                    <input class="survey-form-input" type="tel" placeholder="Mobile Number" />
+                                    <textarea class="text-area" name="" id="" rows="3" cols="30"
+                                        placeholder="Message"></textarea>
+                                    <input class="survey-form-btn" type="submit" />
+                                </form>
+                            </div>
+                        </section>
+                    </main>
+                    <footer>
+                        <div class="footer-wrapper">
+                            <div class="footer-social-links-container">
+                                <div class="footer-social-links">
+                                    <i class="fa-brands fa-youtube primary-icon"></i>
+                                    <i class="fa-brands fa-facebook primary-icon"></i>
+                                    <i class="fa-brands fa-instagram primary-icon"></i>
+                                </div>
+                                <div class="footer-contact-container">
+                                    <div class="whatsup-box">
+                                        <i class="fa-brands fa-whatsapp primary-icon"></i>
+                                        <p class="whatsup-caption">+1 123 123 12 12</p>
+                                    </div>
+                                    <div class="email-box">
+                                        <i class="fa-regular fa-envelope primary-icon"></i>
+                                        <p class="email-caption">mail123@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="footer-address-container">
+                                    <p class="footer-address">
+                                        67-34 Metropolitan Ave, Middle Village, NY 11379
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="footer-location-img" style="background-image: url(./assets/img/location.png)">
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
+<!-- HAMBURGER MENU -->
+<script src="./assets/js/hamburgerMenu.js"></script>
 
 </html>

@@ -1,3 +1,29 @@
+@media(max-width: 1080px) {
+    header {
+        position: fixed;
+        z-index: 10;
+    }
+    .header-wrapper {
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+    .header-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .logo {
+        display: block;
+    }
+    
+    .header-hamburger-btn {
+        display: block;
+    }
+}
+
 @media(max-width: 390px) {
     /* SLOGAN CONTAINER | SLOGAN BOX */
     .slogans-container {
@@ -9,17 +35,9 @@
     }
 
     /* HEADER */
-    header {
-        display: none;
-    }
-
     .header-btn-wrapper {
         margin-right: 16px; 
         display: flex;
-    }
-
-    .header-nav {
-        display: none;
     }
 
     /* HOME SECTION */
@@ -47,6 +65,7 @@
     }
 
     .intro-search-bar-box {
+        width: 250px;
         justify-content: center;
         align-items: center;
     }
@@ -133,6 +152,7 @@
 
     /* DESIGN SECTION */
     .design-box {
+        padding: 0;
         flex-direction: column;
         align-items: center;
         gap: 35px;

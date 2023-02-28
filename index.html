@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +10,8 @@
 
     <!-- GSAP LIBRARY | SCROLL -->
     <script src="./assets/libs/gsap/gsap.min.js" defer></script>
-	<script src="./assets/libs/gsap/ScrollTrigger.min.js" defer></script>
-	<script src="./assets/libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="./assets/libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="./assets/libs/gsap/ScrollSmoother.min.js" defer></script>
     <!-- PARALLAX SCROLLING -->
     <script src="./assets/js/scroll.js" defer></script>
 
@@ -18,13 +19,15 @@
     <link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.min.css">
 
     <!-- 360 DEGREES MONUMENT'S FILES -->
-	<!-- CSS reset -->
-    <link rel="stylesheet" href="./assets/styles/home-page/360DegMonument/reset.css"> 
-	<link rel="stylesheet" href="./assets/styles/home-page/360DegMonument/tombstone360View.css"> <!-- Resource style -->
-	<script src="./assets/js/360DegMonument/modernizr.js"></script> <!-- Modernizr -->
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="./assets/styles/home-page/360DegMonument/reset.css">
+    <link rel="stylesheet" href="./assets/styles/home-page/360DegMonument/tombstone360View.css"> <!-- Resource style -->
+    <script src="./assets/js/360DegMonument/modernizr.js"></script> <!-- Modernizr -->
 
     <!-- ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Resource of Page's Styles -->
     <link rel="stylesheet" href="./assets/styles/primary-styles.css">
@@ -34,11 +37,12 @@
     <!-- TOMBSTONE SLIDE STYLE -->
     <link rel="stylesheet" href="./assets/styles/home-page/tombstone-slide.css">
 </head>
+
 <body>
     <div class="wrapper">
         <div class="content">
             <header>
-                <div class="header-wrapper">                
+                <div class="header-wrapper">
                     <nav class="header-nav">
                         <ul>
                             <li>
@@ -55,316 +59,386 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="header-btn-wrapper">
-                        <button class="header-hamburger-btn">
-                            <div class="hamburger-btn-bar"></div>
-                        </button>
-                    </div>
-            </header>
-            <main>
-                <section class="home-section">
-                    <div class="home-section-backgorund-container">
-                        <div class="parallax-layer layer-base" style="background-image: url(./assets/img/parallaxBackground/sky-base.png)">
-                        </div>
-                        <div class="parallax-layer layer-logo" style="background-image: url(./assets/img/parallaxBackground/Logo.png)">
-                        </div>
-                        <div class="parallax-layer layer-middle" style="background-image: url(./assets/img/parallaxBackground/sky-middle.png)"></div>
-                    </div>
-                    <div class="intro-wrapper">
-                        <div class="intro-title-box">
-                            <h1 class="primary-title">
-                                davydov <br>
-                                monuments
-                            </h1>
-                            <p class="primary-caption-lil">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur deserunt odio
-                                inventore. Perferendis similique enim perspiciatis rem, dolor cum culpa ad voluptatem
-                                expedita necessitatibus quam consectetur laborum. Eligendi, odit perferendis.
-                            </p>
-                        </div>
-                        <div class="intro-search-bar-box">
-                            <input class="primary-seacrh-bar-1" type="search" id="intro-search-input"
-                                placeholder="Ex: red Tombstone" />
-                            <div class="intro-caption-box">
-                                <p class="primary-caption-lil">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quos dolorum cum natus
-                                    necessitatibus sapiente exercitationem dicta ipsam consequuntur rem, perferendis
-                                    ipsa architecto ipsum illo non harum nulla tempora sit.
-                                </p>
-                                <button class="primary-btn-1">Appointment</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="tombstone-section">
-                    <div class="tombstone-section-wrapper">
-                        <div class="tombstone-slide-container">
-                            <div class="tombstone-title-box">
-                                <p class="primary-caption">Type Of</p>
-                                <h1 class="primary-title-lil">Memorials</h1>
-                            </div>
-                            <div class="tombstone-slide-wrapper">
-                                <div class="tombstones-slide-box">
-                                    <!-- Slider main container -->
-                                    <div class="tombstone-slide">
-                                        <!-- Additional required wrapper -->
-                                        <div class="tombstone-card-wrapper swiper-wrapper">
-                                            <!-- Slides -->
-                                            <div class="tombstone-card swiper-slide">
-                                                <div class="tombstone-img-3d-box">
-                                                    <div class="tombstone-img-left-side">
-                                                        <div class="tombstone-img"
-                                                            style="background-image: url(./assets/img/tombstoneImgs/tombstone-1.png);"></div>
-                                                    </div>
-                                                    <div class="tombstone-img-rigth-side">
-                                                        <div class="tombstone-img"
-                                                            style="background-image: url(./assets/img/tombstoneImgs/tombstone-1.png);"></div>
-                                                    </div>
-                                                </div>
-                                                <!-- <p>Double</p> -->
-                                                <div class="tombstone-card-caption">
-                                                    <h1 class="primary-title-lil">Catholic Single</h1>
-                                                    <p class="primary-caption">Single Memorial, Red Granite</p>
-                                                </div>
-                                            </div>
-                        
-                                            <div class="tombstone-card swiper-slide">
-                                                <div class="tombstone-img-3d-box">
-                                                    <div class="tombstone-img-left-side">
-                                                        <div class="tombstone-img"
-                                                            style="background-image: url(./assets/img/tombstoneImgs/tombstone-2.png);"></div>
-                                                    </div>
-                                                    <div class="tombstone-img-rigth-side">
-                                                        <div class="tombstone-img"
-                                                            style="background-image: url(./assets/img/tombstoneImgs/tombstone-2.png);"></div>
-                                                    </div>
-                                                </div>
-                                                <!-- <p>Single</p> -->
-                                                <div class="tombstone-card-caption">
-                                                    <h1 class="primary-title-lil">Jewish Double</h1>
-                                                    <p class="primary-caption">Double Memorial. Bahama Blue.</p>
-                                                </div>
-                                            </div>
-                        
-                                            <div class="tombstone-card swiper-slide">
-                                                <div class="tombstone-img-3d-box">
-                                                    <div class="tombstone-img-left-side">
-                                                        <div class="tombstone-img"
-                                                            style="background-image: url(./assets/img/tombstoneImgs/tombstone-3.png);"></div>
-                                                    </div>
-                                                    <div class="tombstone-img-rigth-side">
-                                                        <div class="tombstone-img"
-                                                            style="background-image: url(./assets/img/tombstoneImgs/tombstone-3.png);"></div>
-                                                    </div>
-                                                </div>
-                                                <!-- <p>Double Process</p> -->
-                                                <div class="tombstone-card-caption">
-                                                    <h1 class="primary-title-lil">Catholic single</h1>
-                                                    <p class="primary-caption">Single Memorial. Bahama Blue.</p>
-                                                </div>
-                                            </div>
-                        
-                                        </div>
-                        
-                                    </div>
-                        
-                                    <div class="tombstone-slide-navigation">
-                                        <div class="tombstone-slide-navigation-prev"></div>
-                                        <div class="tombstone-slide-navigation-next"></div>
-                                    </div>
-                        
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tombstone-section-description">
-                            <div class="galary-description-box">
-                                <h1 class="primary-title">
-                                    galery
-                                </h1>
-                                <p class="primary-caption">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, pariatur, temporibus itaque dolore a similique accusamus voluptates, unde amet in maxime minima consectetur qui saepe natus! Vitae doloribus illo adipisci?
-                                </p>
-                            </div>
-                            <div class="catalog-description-box">
-                                <h1 class="primary-title">
-                                    catalog
-                                </h1>
-                                <p class="primary-caption">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, pariatur, temporibus itaque dolore a similique accusamus voluptates, unde amet in maxime minima consectetur qui saepe natus! Vitae doloribus illo adipisci?
-                                </p>
-                            </div>
-                        </div>
-                        <div class="slogans-container">
-                            <div class="slogan-box">
-                                <img class="primary-slogan-img" src="./assets/img/sloganImgs/slogan 1.png" alt="slogan image">
-                                <p class="primary-slogan-caption">
-                                    quality hand <br>
-                                    etching on granite
-                                </p>
-                            </div>
-                            <div class="slogan-box">
-                                <img class="primary-slogan-img" src="./assets/img/sloganImgs/slogan 2.png" alt="slogan image">
-                                <p class="primary-slogan-caption">
-                                    quality hand <br>
-                                    etching on granite
-                                </p>
-                            </div>
-                            <div class="slogan-box">
-                                <img class="primary-slogan-img" src="./assets/img/sloganImgs/slogan 3.png" alt="slogan image">
-                                <p class="primary-slogan-caption">
-                                    quality hand <br>
-                                    etching on granite
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="about-office-section">
-                    <div class="about-office-wrapper">
-                        <div class="about-office-background" style="background-image: url(./assets/img/graniteBackground.png)"></div>
-                        <div class="about-office-content">
-                            <div class="about-office-title-container">
-                                <h1 class="about-office-title">
-                                    Any Color Of Granite
-                                </h1>
-                                <p class="about-office-caption">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus distinctio aut perferendis veniam cupiditate
-                                    deleniti porro cumque deserunt illum. Rem ipsa veritatis nemo ex dicta, qui itaque magni quidem. Commodi.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id inventore consequatur magni est tempore
-                                    voluptatem consequuntur impedit, illum delectus nam accusamus perferendis. Facilis veniam similique, soluta
-                                    optio reiciendis qui cum!
-                                </p>
-                            </div>
-                        
-                            <div class="working-hours-container">
-                                <div class="working-hours home-working-hours-color"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="design-section">
-                    <div class="design-section-wrapper">
-                        <div class="design-section-content">                                               
-                            <div class="slogans-container">
-                                <div class="slogan-box">
-                                    <img class="primary-slogan-img" src="./assets/img/sloganImgs/slogan 4.png" alt="slogan image">
-                                    <p class="primary-slogan-caption">
-                                        all tipes of memorials
-                                    </p>
-                                </div>
-                                <div class="slogan-box">
-                                    <img class="primary-slogan-img" src="./assets/img/sloganImgs/slogan 5.png" alt="slogan image">
-                                    <p class="primary-slogan-caption">
-                                        monument lettering
-                                    </p>
-                                </div>
-                                <div class="slogan-box">
-                                    <img class="primary-slogan-img" src="./assets/img/sloganImgs/slogan 6.png" alt="slogan image">
-                                    <p class="primary-slogan-caption">
-                                        custom mausoleums
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="design-box">
-                                <div class="monument-container">
-                                    <div class="cd-product-viewer-wrapper" data-frame="16" data-friction="0.33">
-                                        <div>
-                                            <figure class="product-viewer">
-                                                <img class="monument-360Deg" src="./assets/img/360DegMonument/img-loading.jpg"
-                                                    alt="Product Preview">
-                                                <div class="product-sprite" data-image="./assets/img/360DegMonument/img-sprite.jpg"></div>
-                                            </figure> <!-- .product-viewer -->
-                        
-                                            <div class="cd-product-viewer-handle">
-                                                <span class="fill"></span>
-                                                <span class="handle">Handle</span>
-                                            </div>
-                                        </div> <!-- .cd-product-viewer-handle -->
-                                    </div> <!-- .cd-product-viewer-wrapper -->
-                                </div>
-                        
-                                <div class="design-title-container">
-                                    <h1 class="primary-title">
-                                        Design
-                                    </h1>
-                                    <p class="design-caption primary-caption">
-                                        consequat. Duis aute irure dolor in reprehenderit. Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna
-                                        aliqua. <br>
-                                        <br>
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                        ex ea commodo consequat.
-                                        consequat. Duis aute irure dolor in reprehenderit. Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna
-                                        aliqua. Duis aute irure dolor in reprehenderit. <br>
-                                        <br>
-                                        Duis aute irure dolor in reprehenderit. Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation ullamco laboris nisi ut
-                                        aliquip ex ea commodo
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="slogans-container">
-                                <div class="slogan-box">
-                                    <img class="primary-slogan-img" src="./assets/img/sloganImgs/slogan 7.png" alt="slogan image">
-                                    <p class="primary-slogan-caption">
-                                        engraving on granite
-                                    </p>
-                                </div>
-                                <div class="slogan-box">
-                                    <img class="primary-slogan-img" src="./assets/img/sloganImgs/slogan 8.png" alt="slogan image">
-                                    <p class="primary-slogan-caption">
-                                        monuments for <br>
-                                        all cemetery
-                                    </p>
-                                </div>
-                                <div class="slogan-box">
-                                    <img class="primary-slogan-img" src="./assets/img/sloganImgs/slogan 9.png" alt="slogan image">
-                                    <p class="primary-slogan-caption">
-                                        personalization <br>
-                                        & custom design
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <footer>
-                <div class="footer-wrapper">
-                    <div class="footer-social-links-container">
-                        <div class="footer-social-links">
-                            <i class="fa-brands fa-youtube primary-icon"></i>
-                            <i class="fa-brands fa-facebook primary-icon"></i>
-                            <i class="fa-brands fa-instagram primary-icon"></i>
-                        </div>
-                        <div class="footer-contact-container">
-                            <div class="whatsup-box">
-                                <i class="fa-brands fa-whatsapp primary-icon"></i>
-                                <p class="whatsup-caption">+1 123 123 12 12</p>
-                            </div>
-                            <div class="email-box">
-                                <i class="fa-regular fa-envelope primary-icon"></i>
-                                <p class="email-caption">mail123@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="footer-address-container">
-                            <p class="footer-address">
-                                67-34 Metropolitan Ave, Middle Village, NY 11379
-                            </p>
-                        </div>
-                    </div>
-                    <div class="footer-location-img" style="background-image: url(./assets/img/location.png)"></div>
+                    <a href="./index.html">
+                        <div class="logo" style="background-image: url(./assets/img/headerImgs/logo.png)"></div>
+                    </a>
+                    <button class="header-hamburger-btn">
+                        <div class="hamburger-btn-bar"></div>
+                    </button>
+                    <nav class="mobile-nav">
+                        <ul>
+                            <li>
+                                <a class="primary-page-link primary-active-page" href="./index.html">home</a>
+                            </li>
+                            <li>
+                                <a class="primary-page-link" href="./catalog.html">catalog</a>
+                            </li>
+                            <li>
+                                <a class="primary-page-link" href="./galery.html">galery</a>
+                            </li>
+                            <li>
+                                <a class="primary-page-link" href="./contact.html">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-            </footer>
+            </header>
+            <!-- <div class="smooth-wrapper">
+                <div class="smooth-content"> -->
+                    <main>
+                        <section class="home-section">
+                            <div class="home-section-backgorund-container">
+                                <div class="parallax-layer layer-base"
+                                    style="background-image: url(./assets/img/parallaxBackground/sky-base.png)">
+                                </div>
+                                <div class="parallax-layer layer-logo"
+                                    style="background-image: url(./assets/img/parallaxBackground/Logo.png)">
+                                </div>
+                                <div class="parallax-layer layer-middle"
+                                    style="background-image: url(./assets/img/parallaxBackground/sky-middle.png)"></div>
+                            </div>
+                            <div class="intro-wrapper">
+                                <div class="intro-title-box">
+                                    <h1 class="primary-title">
+                                        davydov <br>
+                                        monuments
+                                    </h1>
+                                    <p class="primary-caption-lil">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur deserunt
+                                        odio
+                                        inventore. Perferendis similique enim perspiciatis rem, dolor cum culpa ad
+                                        voluptatem
+                                        expedita necessitatibus quam consectetur laborum. Eligendi, odit perferendis.
+                                    </p>
+                                </div>
+                                <div class="intro-search-bar-box">
+                                    <input class="primary-seacrh-bar-1" type="search" id="intro-search-input"
+                                        placeholder="Ex: red Tombstone" />
+                                    <div class="intro-caption-box">
+                                        <p class="primary-caption-lil">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quos dolorum
+                                            cum natus
+                                            necessitatibus sapiente exercitationem dicta ipsam consequuntur rem,
+                                            perferendis
+                                            ipsa architecto ipsum illo non harum nulla tempora sit.
+                                        </p>
+                                        <button class="primary-btn-1">Appointment</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="tombstone-section">
+                            <div class="tombstone-section-wrapper">
+                                <div class="tombstone-slide-container">
+                                    <div class="tombstone-title-box">
+                                        <p class="primary-caption">Type Of</p>
+                                        <h1 class="primary-title-lil">Memorials</h1>
+                                    </div>
+                                    <div class="tombstone-slide-wrapper">
+                                        <div class="tombstones-slide-box">
+                                            <!-- Slider main container -->
+                                            <div class="tombstone-slide">
+                                                <!-- Additional required wrapper -->
+                                                <div class="tombstone-card-wrapper swiper-wrapper">
+                                                    <!-- Slides -->
+                                                    <div class="tombstone-card swiper-slide">
+                                                        <div class="tombstone-img-3d-box">
+                                                            <div class="tombstone-img-left-side">
+                                                                <div class="tombstone-img"
+                                                                    style="background-image: url(./assets/img/tombstoneImgs/tombstone-1.png);">
+                                                                </div>
+                                                            </div>
+                                                            <div class="tombstone-img-rigth-side">
+                                                                <div class="tombstone-img"
+                                                                    style="background-image: url(./assets/img/tombstoneImgs/tombstone-1.png);">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <p>Double</p> -->
+                                                        <div class="tombstone-card-caption">
+                                                            <h1 class="primary-title-lil">Catholic Single</h1>
+                                                            <p class="primary-caption">Single Memorial, Red Granite</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tombstone-card swiper-slide">
+                                                        <div class="tombstone-img-3d-box">
+                                                            <div class="tombstone-img-left-side">
+                                                                <div class="tombstone-img"
+                                                                    style="background-image: url(./assets/img/tombstoneImgs/tombstone-2.png);">
+                                                                </div>
+                                                            </div>
+                                                            <div class="tombstone-img-rigth-side">
+                                                                <div class="tombstone-img"
+                                                                    style="background-image: url(./assets/img/tombstoneImgs/tombstone-2.png);">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <p>Single</p> -->
+                                                        <div class="tombstone-card-caption">
+                                                            <h1 class="primary-title-lil">Jewish Double</h1>
+                                                            <p class="primary-caption">Double Memorial. Bahama Blue.</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tombstone-card swiper-slide">
+                                                        <div class="tombstone-img-3d-box">
+                                                            <div class="tombstone-img-left-side">
+                                                                <div class="tombstone-img"
+                                                                    style="background-image: url(./assets/img/tombstoneImgs/tombstone-3.png);">
+                                                                </div>
+                                                            </div>
+                                                            <div class="tombstone-img-rigth-side">
+                                                                <div class="tombstone-img"
+                                                                    style="background-image: url(./assets/img/tombstoneImgs/tombstone-3.png);">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <p>Double Process</p> -->
+                                                        <div class="tombstone-card-caption">
+                                                            <h1 class="primary-title-lil">Catholic single</h1>
+                                                            <p class="primary-caption">Single Memorial. Bahama Blue.</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="tombstone-slide-navigation">
+                                                <div class="tombstone-slide-navigation-prev"></div>
+                                                <div class="tombstone-slide-navigation-next"></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tombstone-section-description">
+                                    <div class="galary-description-box">
+                                        <h1 class="primary-title">
+                                            galery
+                                        </h1>
+                                        <p class="primary-caption">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, pariatur,
+                                            temporibus
+                                            itaque dolore a similique accusamus voluptates, unde amet in maxime minima
+                                            consectetur qui saepe natus! Vitae doloribus illo adipisci?
+                                        </p>
+                                    </div>
+                                    <div class="catalog-description-box">
+                                        <h1 class="primary-title">
+                                            catalog
+                                        </h1>
+                                        <p class="primary-caption">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, pariatur,
+                                            temporibus
+                                            itaque dolore a similique accusamus voluptates, unde amet in maxime minima
+                                            consectetur qui saepe natus! Vitae doloribus illo adipisci?
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slogans-container">
+                                    <div class="slogan-box">
+                                        <img class="primary-slogan-img" src="./assets/img/sloganImgs/slogan 1.png"
+                                            alt="slogan image">
+                                        <p class="primary-slogan-caption">
+                                            quality hand <br>
+                                            etching on granite
+                                        </p>
+                                    </div>
+                                    <div class="slogan-box">
+                                        <img class="primary-slogan-img" src="./assets/img/sloganImgs/slogan 2.png"
+                                            alt="slogan image">
+                                        <p class="primary-slogan-caption">
+                                            quality hand <br>
+                                            etching on granite
+                                        </p>
+                                    </div>
+                                    <div class="slogan-box">
+                                        <img class="primary-slogan-img" src="./assets/img/sloganImgs/slogan 3.png"
+                                            alt="slogan image">
+                                        <p class="primary-slogan-caption">
+                                            quality hand <br>
+                                            etching on granite
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="about-office-section">
+                            <div class="about-office-wrapper">
+                                <div class="about-office-background"
+                                    style="background-image: url(./assets/img/graniteBackground.png)"></div>
+                                <div class="about-office-content">
+                                    <div class="about-office-title-container">
+                                        <h1 class="about-office-title">
+                                            Any Color Of Granite
+                                        </h1>
+                                        <p class="about-office-caption">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus distinctio
+                                            aut
+                                            perferendis veniam cupiditate
+                                            deleniti porro cumque deserunt illum. Rem ipsa veritatis nemo ex dicta, qui
+                                            itaque
+                                            magni quidem. Commodi.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id inventore
+                                            consequatur
+                                            magni est tempore
+                                            voluptatem consequuntur impedit, illum delectus nam accusamus perferendis.
+                                            Facilis
+                                            veniam similique, soluta
+                                            optio reiciendis qui cum!
+                                        </p>
+                                    </div>
+
+                                    <div class="working-hours-container">
+                                        <div class="working-hours home-working-hours-color"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="design-section">
+                            <div class="design-section-wrapper">
+                                <div class="design-section-content">
+                                    <div class="slogans-container">
+                                        <div class="slogan-box">
+                                            <img class="primary-slogan-img" src="./assets/img/sloganImgs/slogan 4.png"
+                                                alt="slogan image">
+                                            <p class="primary-slogan-caption">
+                                                all tipes of memorials
+                                            </p>
+                                        </div>
+                                        <div class="slogan-box">
+                                            <img class="primary-slogan-img" src="./assets/img/sloganImgs/slogan 5.png"
+                                                alt="slogan image">
+                                            <p class="primary-slogan-caption">
+                                                monument lettering
+                                            </p>
+                                        </div>
+                                        <div class="slogan-box">
+                                            <img class="primary-slogan-img" src="./assets/img/sloganImgs/slogan 6.png"
+                                                alt="slogan image">
+                                            <p class="primary-slogan-caption">
+                                                custom mausoleums
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="design-box">
+                                        <div class="monument-container">
+                                            <div class="cd-product-viewer-wrapper" data-frame="16" data-friction="0.33">
+                                                <div>
+                                                    <figure class="product-viewer">
+                                                        <img class="monument-360Deg"
+                                                            src="./assets/img/360DegMonument/img-loading.jpg"
+                                                            alt="Product Preview">
+                                                        <div class="product-sprite"
+                                                            data-image="./assets/img/360DegMonument/img-sprite.jpg">
+                                                        </div>
+                                                    </figure> <!-- .product-viewer -->
+
+                                                    <div class="cd-product-viewer-handle">
+                                                        <span class="fill"></span>
+                                                        <span class="handle">Handle</span>
+                                                    </div>
+                                                </div> <!-- .cd-product-viewer-handle -->
+                                            </div> <!-- .cd-product-viewer-wrapper -->
+                                        </div>
+
+                                        <div class="design-title-container">
+                                            <h1 class="primary-title">
+                                                Design
+                                            </h1>
+                                            <p class="design-caption primary-caption">
+                                                consequat. Duis aute irure dolor in reprehenderit. Lorem ipsum dolor sit
+                                                amet,
+                                                consectetur adipiscing elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna
+                                                aliqua. <br>
+                                                <br>
+                                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                                ut
+                                                aliquip
+                                                ex ea commodo consequat.
+                                                consequat. Duis aute irure dolor in reprehenderit. Lorem ipsum dolor sit
+                                                amet,
+                                                consectetur adipiscing elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna
+                                                aliqua. Duis aute irure dolor in reprehenderit. <br>
+                                                <br>
+                                                Duis aute irure dolor in reprehenderit. Lorem ipsum dolor sit amet,
+                                                consectetur
+                                                adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis
+                                                nostrud
+                                                exercitation ullamco laboris nisi ut
+                                                aliquip ex ea commodo
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slogans-container">
+                                        <div class="slogan-box">
+                                            <img class="primary-slogan-img" src="./assets/img/sloganImgs/slogan 7.png"
+                                                alt="slogan image">
+                                            <p class="primary-slogan-caption">
+                                                engraving on granite
+                                            </p>
+                                        </div>
+                                        <div class="slogan-box">
+                                            <img class="primary-slogan-img" src="./assets/img/sloganImgs/slogan 8.png"
+                                                alt="slogan image">
+                                            <p class="primary-slogan-caption">
+                                                monuments for <br>
+                                                all cemetery
+                                            </p>
+                                        </div>
+                                        <div class="slogan-box">
+                                            <img class="primary-slogan-img" src="./assets/img/sloganImgs/slogan 9.png"
+                                                alt="slogan image">
+                                            <p class="primary-slogan-caption">
+                                                personalization <br>
+                                                & custom design
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                    <footer>
+                        <div class="footer-wrapper">
+                            <div class="footer-social-links-container">
+                                <div class="footer-social-links">
+                                    <i class="fa-brands fa-youtube primary-icon"></i>
+                                    <i class="fa-brands fa-facebook primary-icon"></i>
+                                    <i class="fa-brands fa-instagram primary-icon"></i>
+                                </div>
+                                <div class="footer-contact-container">
+                                    <div class="whatsup-box">
+                                        <i class="fa-brands fa-whatsapp primary-icon"></i>
+                                        <p class="whatsup-caption">+1 123 123 12 12</p>
+                                    </div>
+                                    <div class="email-box">
+                                        <i class="fa-regular fa-envelope primary-icon"></i>
+                                        <p class="email-caption">mail123@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="footer-address-container">
+                                    <p class="footer-address">
+                                        67-34 Metropolitan Ave, Middle Village, NY 11379
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="footer-location-img" style="background-image: url(./assets/img/location.png)">
+                            </div>
+                        </div>
+                    </footer>
+                <!-- </div>
+            </div> -->
         </div>
     </div>
 
-</body>        
+</body>
 <!-- SWIPER SLIDER -->
 <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
 <script src="./assets/js/tombstoneSlide.js"></script>
@@ -373,5 +447,8 @@
 <script src="./assets/js/360DegMonument/jquery-2.1.4.js"></script>
 <script src="./assets/js/360DegMonument/jquery.mobile.custom.min.js"></script>
 <script src="./assets/js/360DegMonument/main.js"></script>
+
+<!-- HAMBURGER MENU -->
+<script src="./assets/js/hamburgerMenu.js"></script>
 
 </html>

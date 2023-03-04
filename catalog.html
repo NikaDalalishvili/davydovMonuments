@@ -13,6 +13,11 @@
     <!-- PARALLAX SCROLLING -->
     <!-- <script src="./assets/js/scroll.js" defer></script> -->
 
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Resource of Page's Styles -->
     <link rel="stylesheet" href="./assets/styles/primary-styles.css">
     <link rel="stylesheet" href="./assets/styles/styles.css">
@@ -84,10 +89,10 @@
                                 <button class="radio-btn" onclick="filterProduct('double')">double</button>
                             </div>
                             <div class="products-box" id="products-box">
-                                <div class="product-card">
+                                <!-- <div class="product-card">
                                     <div class="product-img-box">
                                         <img class="product-img" src="./assets/img/catalogImgs/DMG0002M.jpg" alt="">
-                                        <!-- <div class="product-img" style="background-image: url(./assets/img/catalogImgs/DMGA20015M.jpg)"></div> -->
+                                        <div class="product-img" style="background-image: url(./assets/img/catalogImgs/DMGA20015M.jpg)"></div>
                                     </div>
                                     <div class="product-caption-box">
                                         <p class="product-caption">DMG0002M</p>
@@ -96,6 +101,33 @@
                                         <p class="product-caption">buddhist</p>
                                         <p class="product-caption">width 32 inch</p>
                                     </div>
+                                </div> -->
+                            </div>
+                            <div class="modal-container hide">
+                                <div class="modal-bg"></div>
+                                <div class="modal-content">
+                                    <div class="modal-image-box">
+                                        <div class="modal-image"></div>
+                                    </div>
+                                    <div class="modal-caption-box">
+                                        <div class="div-modal-caption-couple">
+                                            <p class="modal-subtitle">Product Code :</p>
+                                            <p class="modal-caption modal-caption-code" id="modal-caption-code"></p>
+                                        </div>
+                                        <div class="div-modal-caption-couple">
+                                            <p class="modal-subtitle">Category :</p>
+                                            <p class="modal-caption modal-caption-category" id="modal-caption-category"></p>
+                                        </div>
+                                        <div class="div-modal-caption-couple">
+                                            <p class="modal-subtitle">Product Name :</p>
+                                            <p class="modal-caption modal-caption-name" id="modal-caption-name"></p>
+                                        </div>
+                                        <div class="div-modal-caption-couple">
+                                            <p class="modal-subtitle">Product Type :</p>
+                                            <p class="modal-caption modal-caption-type" id="modal-caption-type"></p>
+                                        </div>
+                                    </div>
+                                    <i class="modal-close fa-solid fa-xmark"></i>
                                 </div>
                             </div>
                         </section>

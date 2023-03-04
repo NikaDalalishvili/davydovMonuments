@@ -114,9 +114,108 @@
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .product-card:hover .product-caption-box {
     height: 50%;
+}
+
+.modal-container {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.modal-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 33, 51, .7);
+
+    position: absolute;
+}
+
+.modal-content {
+    width: 100%;
+    height: 100%;
+    max-width: 960px;
+    max-height: 540px;
+    padding: 0 50px;
+    border-radius: 10px;
+    border: 2px solid var(--primary-blue-li);
+
+    background-color: var(--primary-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    position: relative;
+}
+
+.modal-image {
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    border: 2px solid var(--primary-blue-dark);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal-caption-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-modal-caption-couple {
+    padding: 10px;
+    border-bottom: 2px solid var(--primary-blue-li);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.div-modal-caption-couple:last-of-type {
+    border-bottom: none;
+}
+
+.modal-subtitle {
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+
+    color: var(--primary-blue);
+}
+
+.modal-caption {
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+
+    color: var(--primary-blue-dark);
+}
+
+.modal-close {
+    font-size: 38px;
+    color: var(--primary-blue-dark);
+    text-align: center;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    cursor: pointer;
 }

@@ -265,7 +265,7 @@ let products = {
 for (let i of products.data) {
 
   //Create Card
-  let productCard = document.createElement("div");
+  var productCard = document.createElement("div");
   //Card should have category and should stay hidden initially
   productCard.classList.add("product-card", i.category.option1, i.category.option2, "hide");
 
@@ -315,6 +315,38 @@ for (let i of products.data) {
 
   document.getElementById("products-box").appendChild(productCard);
   // document.getElementsByClassName(".products-box").appendChild(productCard);
+
+  // modal
+  const modalContainer = document.querySelector('.modal-container');
+  const modalClose = document.querySelector('.modal-close');
+  const modalBg = document.querySelector('.modal-bg');
+  const modalImage = document.querySelector('.modal-image');
+  const modalCaptionCode = document.querySelector('.modal-caption-code');
+  const modalCaptionCategory = document.querySelector('.modal-caption-category');
+  const modalCaptionName = document.querySelector('.modal-caption-name');
+  const modalCaptionType = document.querySelector('.modal-caption-type');
+
+
+  productCard.addEventListener('click', () => {
+    document.body.style.overflow = 'hidden';
+    modalContainer.classList.remove('hide');
+    modalImage.setAttribute("style", productImageAddress);
+    modalCaptionCode.innerText = productCode.innerText;
+    modalCaptionCategory.innerText = productCategory.innerText;
+    modalCaptionName.innerText = productCaption.innerText;
+    modalCaptionType.innerText = productType.innerText;
+  });
+
+  modalClose.addEventListener('click', () => {
+    modalContainer.classList.add('hide');
+    document.body.style.overflow = 'visible';
+  });
+  
+  modalBg.addEventListener('click', () => {
+    modalContainer.classList.add('hide');
+    document.body.style.overflow = 'visible';
+  });
+
 }
 
 //parameter passed from button (Parameter same as category)

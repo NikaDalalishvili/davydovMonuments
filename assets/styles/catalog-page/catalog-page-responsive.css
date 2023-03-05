@@ -1,0 +1,38 @@
+@media(max-width: 1080px) {
+    .product-card {
+        width: 180px;
+        height: 150px;
+    }
+    .modal-content {
+        max-width: 680px;
+        max-height: 530px;
+    }
+
+    .modal-image {
+        width: 280px;
+        height: 360px;
+    }
+
+    .modal-subtitle {
+        font-size: 18px;
+    }
+
+    .modal-caption {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 390px) {
+    .product-card {
+        width: 140px;
+        height: 120px;
+    }
+
+    .product-caption {
+        font-size: 14px;
+    }
+
+    .product-card:hover .product-caption-box {
+        height: 34px;
+    }
+}

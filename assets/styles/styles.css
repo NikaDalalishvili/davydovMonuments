@@ -93,7 +93,7 @@ header {
     background-color: var(--primary-blue-dark);
     padding: 120px 0;
     -webkit-transition: 0.4s;
-    transition: 0.4s
+    transition: 0.4s;
 }
 
 .mobile-nav.is-active {
@@ -462,7 +462,7 @@ header {
     font-size: 24px;
     line-height: 55px;
 
-    color: var(--primary-blue);
+    color: var(--primary-white);
 }
 
 .about-office-caption {
@@ -471,7 +471,7 @@ header {
     font-weight: 600;
     font-size: 24px;
     line-height: 30px;
-    color: var(--primary-blue-dark);
+    color: var(--primary-white);
 }
 
 .working-hours-container {
@@ -486,7 +486,7 @@ header {
 }
 
 .home-working-hours-color {
-    background-image: url(.././img/workingHours/workingHours-primary-blue-dark.png);
+    background-image: url(.././img/workingHours/workingHours-white.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -581,8 +581,8 @@ header {
     flex-wrap: wrap;
 }
 
-.whatsup-box,
-.email-box {
+.whatsup-caption, 
+.email-caption {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -600,6 +600,14 @@ header {
     line-height: 19px;
     text-align: center;
     color: var(--primary-blue);
+
+    
+}
+
+.footer-address-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-address {

@@ -44,12 +44,14 @@
     }
 
     .footer-contact-container {
+
     }
 }
 
 @media(max-width: 390px) {
     /* SLOGAN CONTAINER | SLOGAN BOX */
     .slogans-container {
+        padding: 0;
         gap: 32px;
     }
 

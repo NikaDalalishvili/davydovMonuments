@@ -2,12 +2,8 @@
  *  CATALOG PAGE SEARCH BAR BOX
  */
 
-body {
-    overflow: scroll;
-}
-
 .galery-section {
-    padding: 0 250px;
+    padding: 0 10%;
 }
 
 .search-box {

@@ -1,0 +1,21 @@
+@media(max-width: 1080px) {
+    .product-card {
+        width: 180px;
+        height: 270px;
+    }
+}
+
+@media(max-width: 390px) {
+    .product-card {
+        width: 130px;
+        height: 195px;
+    }
+
+    .product-caption {
+        font-size: 14px;
+    }
+
+    .product-card:hover .product-caption-box {
+        height: 34px;
+    }
+}

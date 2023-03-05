@@ -146,6 +146,8 @@ main {
 }
 
 .primary-search-bar {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
     width: 50%;
     padding: 15px 15px;
     border: none;

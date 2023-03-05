@@ -10,6 +10,7 @@
 /* SLOGANS */
 
 .slogans-container {
+    padding: 0 50px;
     display: flex;
     flex-direction: row;
     gap: 170px;
@@ -560,6 +561,7 @@ header {
 }
 
 .footer-social-links-container {
+    padding: 0 70px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -573,6 +575,10 @@ header {
     justify-content: center;
     align-items: center;
     gap: 25px;
+}
+
+.footer-contact-container {
+    flex-wrap: wrap;
 }
 
 .whatsup-box,
@@ -594,6 +600,10 @@ header {
     line-height: 19px;
     text-align: center;
     color: var(--primary-blue);
+}
+
+.footer-address {
+    min-inline-size: 175px;
 }
 
 .footer-location-img {

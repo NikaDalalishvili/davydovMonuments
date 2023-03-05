@@ -140,6 +140,8 @@
     right: 0;
     bottom: 0;
     z-index: 3;
+
+    overflow-y: scroll;
 }
 
 .modal-bg {
@@ -161,7 +163,7 @@
 
     background-color: var(--primary-white);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 50px;
 

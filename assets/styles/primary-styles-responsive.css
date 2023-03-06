@@ -16,6 +16,11 @@
         line-height: 55px;
     }
 
+    .primary-title-lil {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
     .primary-caption {
         font-size: 14px;
         line-height: 20px;
@@ -32,11 +37,25 @@
     }
 
     .primary-icon {
-        font-size: 26px;
+        font-size: 16px;
     }  
+
+    .primary-search-btn {
+        width: 140px;
+        font-size: 18px;
+    }
 
     .radio-btn {
         padding: 4px 16px;
         font-size: 16px;
+    }
+
+    .primary-search-bar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .primary-search-bar::placeholder {
+        font-size: 14px;
     }
 }

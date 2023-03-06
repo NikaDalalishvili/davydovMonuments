@@ -1,0 +1,19 @@
+@media(max-width: 390px) {
+    .contact-section {
+        margin: 0;
+    }
+    .contact-section > div:not(.working-hours-container){
+        width: 250px;
+    }
+
+    .survey-form-btn {
+        padding: 6px 14px;
+        border-radius: 24px;
+
+        font-size: 18px;
+    }
+
+    .contact-caption {
+        font-size: 18px;
+    }
+}

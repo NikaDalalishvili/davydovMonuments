@@ -618,11 +618,7 @@ header {
     min-inline-size: 175px;
 }
 
-.footer-location-img {
+.footer-address-map {
     width: 100%;
     height: 350px;
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }

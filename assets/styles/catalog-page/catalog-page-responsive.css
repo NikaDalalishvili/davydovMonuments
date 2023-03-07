@@ -35,4 +35,33 @@
     .product-card:hover .product-caption-box {
         height: 34px;
     }
+
+    .modal-content {
+        max-width: 360px;
+        max-height: 620px;
+        padding: 0 20px;
+        
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .modal-image {
+        width: 200px;
+        height: 300px;
+    }
+
+    .modal-subtitle {
+        font-size: 14px;
+    }
+    
+    .modal-caption {
+        font-size: 12px;
+    }
+
+    .modal-close {
+        font-size: 30px;
+
+        top: 15px;
+        right: 20px;
+    }
 }

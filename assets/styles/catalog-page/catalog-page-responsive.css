@@ -3,6 +3,11 @@
         width: 180px;
         height: 150px;
     }
+
+    .product-caption-box {
+        display: none;
+    }
+
     .modal-content {
         max-width: 680px;
         max-height: 530px;
@@ -27,15 +32,7 @@
         width: 140px;
         height: 120px;
     }
-
-    .product-caption {
-        font-size: 14px;
-    }
-
-    .product-card:hover .product-caption-box {
-        height: 34px;
-    }
-
+    
     .modal-content {
         max-width: 360px;
         max-height: 620px;

@@ -41,7 +41,7 @@
 <body>
     <div class="wrapper">
         <div class="content">
-            <header>
+            <header class="header">
                 <div class="header-wrapper">
                     <nav class="header-nav">
                         <ul>
@@ -66,20 +66,57 @@
                         <div class="hamburger-btn-bar"></div>
                     </button>
                     <nav class="mobile-nav">
-                        <ul>
-                            <li>
-                                <a class="primary-page-link primary-active-page" href="./index.html">home</a>
-                            </li>
-                            <li>
-                                <a class="primary-page-link" href="./catalog.html">catalog</a>
-                            </li>
-                            <li>
-                                <a class="primary-page-link" href="./galery.html">galery</a>
-                            </li>
-                            <li>
-                                <a class="primary-page-link" href="./contact.html">contact</a>
-                            </li>
-                        </ul>
+                        <div class="mobile-nav-content">
+                            <ul>
+                                <li>
+                                    <a class="primary-page-link primary-active-page" href="./index.html">home</a>
+                                </li>
+                                <li>
+                                    <a class="primary-page-link" href="./catalog.html">catalog</a>
+                                </li>
+                                <li>
+                                    <a class="primary-page-link" href="./galery.html">galery</a>
+                                </li>
+                                <li>
+                                    <a class="primary-page-link" href="./contact.html">contact</a>
+                                </li>
+                            </ul>
+                        
+                            <div class="mobile-nav-social-links-container">
+                                <div class="mobile-nav-social-links">
+                                    <a href="#">
+                                        <i class="fa-brands fa-youtube primary-icon"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook primary-icon"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram primary-icon"></i>
+                                    </a>
+                                </div>
+                                <div class="mobile-nav-contact-container">
+                                    <a class="mobile-nav-whatsup-caption" href="tel:+11231231212">
+                                        <i class="fa-brands fa-whatsapp primary-icon"></i>
+                                        +1 123 123 12 12
+                                    </a>
+                                    <a class="mobile-nav-email-caption" href="mailto:mail123@gmail.com">
+                                        <i class="fa-regular fa-envelope primary-icon"></i>
+                                        mail123@gmail.com
+                                    </a>
+                                </div>
+                                <div class="mobile-nav-address-container">
+                                    <a class="mobile-nav-address"
+                                        href="https://www.google.com/maps/search/67-34+Metropolitan+Ave,+Middle+Village,+NY+11379/"
+                                        target="_blank">
+                                        <i class="fa-sharp fa-solid fa-location-dot primary-icon"></i>
+                                        67-34 Metropolitan Ave, Middle Village, NY 11379</a>
+                                </div>
+                            </div>
+                            <iframe class="mobile-nav-address-map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1512.1294603953938!2d-73.89044471320442!3d40.71231630290286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e62aaedde8f%3A0xe4cf1dd9c9946255!2s67-34%20Metropolitan%20Ave%2C%20Middle%20Village%2C%20NY%2011379%2C%20USA!5e0!3m2!1sen!2sde!4v1678227033823!5m2!1sen!2sde"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </nav>
                 </div>
             </header>
@@ -447,6 +484,9 @@
     </div>
 
 </body>
+<!-- HEADER -->
+<script src="./assets/js/header.js"></script>
+
 <!-- SWIPER SLIDER -->
 <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
 <script src="./assets/js/tombstoneSlide.js"></script>

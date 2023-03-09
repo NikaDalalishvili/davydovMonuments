@@ -81,6 +81,27 @@
         position: relative;
     }
 
+    .mobile-nav  {
+        padding: 70px 0;
+    }
+
+    .mobile-nav ul a {
+        max-width: 160px;
+        padding: 10px 16px;
+    }
+
+    .mobile-nav-content {
+        gap: 20px;
+    }
+
+    .mobile-nav-social-links-container {
+        gap: 20px;
+    }
+
+    .mobile-nav-address-map {
+        height: 230px;
+    }
+
     .intro-wrapper {
         margin: 10px 0 0;
     }

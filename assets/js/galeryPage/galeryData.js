@@ -290,25 +290,25 @@ for (let i of products.data) {
 
   // product code
   let productCode = document.createElement("p");
-  productCode.classList.add("product-caption");
+  productCode.classList.add("product-caption", "product-code");
   productCode.innerText = i.productCode.toUpperCase();
   productCaptionBox.appendChild(productCode);
 
   // product category
   let productCategory = document.createElement("p");
-  productCategory.classList.add("product-caption");
+  productCategory.classList.add("product-caption", "product-category");
   productCategory.innerText = i.category.option1 + ", " + i.category.option2;
   productCaptionBox.appendChild(productCategory);
 
   // product name
   let productCaption = document.createElement("p");
-  productCaption.classList.add("product-caption");
+  productCaption.classList.add("product-caption", "product-name");
   productCaption.innerText = i.productName;
   productCaptionBox.appendChild(productCaption);
 
   // product type
   let productType = document.createElement("p");
-  productType.classList.add("product-caption");
+  productType.classList.add("product-caption", "product-type");
   productType.innerText = i.productType;
   productCaptionBox.appendChild(productType);
 
@@ -382,24 +382,44 @@ function filterProduct(value) {
   });
 }
 
+
 //Search button click
 document.getElementById("primary-search-btn").addEventListener("click", () => {
   //initializations
-  let searchInput = document.getElementById("primary-search-bar").value;
-  let elements = document.querySelectorAll(".product-caption");
+  let searchInput = document.getElementById("primary-search-bar");
+  let searchQuery = searchInput.value.toLowerCase();
+
+  let codeSearch = document.querySelectorAll(".product-code");
+  let categorySearch = document.querySelectorAll(".product-category");
+  let nameSearch = document.querySelectorAll(".product-name");
+  let typeSearch = document.querySelectorAll(".product-type");
+
   let cards = document.querySelectorAll(".product-card");
 
   //loop through all elements
-  elements.forEach((element, index) => {
+  cards.forEach((element, index) => {
+
     //check if text includes the search value
-    if (element.innerText.includes(searchInput.toUpperCase())) {
+    if(searchQuery === codeSearch[index].textContent.toLowerCase() ||
+      categorySearch[index].textContent.toLowerCase().includes(searchQuery) ||
+      nameSearch[index].textContent.toLowerCase().includes(searchQuery) ||
+      typeSearch[index].textContent.toLowerCase().includes(searchQuery)) {
+
       //display matching card
       cards[index].classList.remove("hide");
+
     } else {
       //hide others
       cards[index].classList.add("hide");
     }
   });
+});
+
+document.getElementById("primary-search-bar").addEventListener("keypress", (event) => {
+  if(event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("primary-search-btn").click();
+  }
 });
 
 //Initially display all products

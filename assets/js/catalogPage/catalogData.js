@@ -353,7 +353,6 @@ for (let i of products.data) {
 
 
   productCard.addEventListener('click', () => {
-    document.body.style.overflow = 'hidden';
     modalContainer.classList.remove('hide');
     modalImage.setAttribute("style", productImageAddress);
     modalCaptionCode.innerText = productCode.innerText;

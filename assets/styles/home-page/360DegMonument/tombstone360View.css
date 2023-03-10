@@ -198,9 +198,3 @@ Main Components
     transform: translateX(-50%) scale(1);
   }
 }
-
-@media(max-width: 390px) {
-  .monument-360Deg {
-    width: 300px;
-  }
-}

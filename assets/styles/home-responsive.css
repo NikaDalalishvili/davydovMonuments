@@ -29,7 +29,7 @@
     }
     
     .about-office-content {
-        padding: 60px 0 0;
+        padding: 60px 80px 0;
     }
 }
 
@@ -42,9 +42,65 @@
         flex-direction: column;
         gap: 25px;
     }
+}
 
-    .footer-contact-container {
+@media(max-width: 720px) {
+    .about-office-title {
+        font-size: 20px;
+    }
 
+    .about-office-caption {
+        font-size: 20px;
+    }
+    
+    .working-hours-container {
+        width: 300px;
+        height: 215px;
+    }
+}
+
+@media(max-width: 650px) {
+    .tombstone-section-description {
+        padding: 0 50px;
+    }
+
+    .slogans-container {
+        padding: 0;
+        gap: 50px;
+    }
+    .slogan-box {
+        width: 120px;
+    }
+
+    .design-box {
+        padding: 0;
+    }
+}
+
+@media(max-width: 520px) {
+    .intro-wrapper {
+        margin: 30px 0;
+        padding: 0 50px;
+    }
+
+    .slogan-box {
+        width: 85px;
+    }
+
+    .about-office-content {
+        padding: 60px 30px 0;
+    }
+    
+    .monument-360Deg {
+        width: 350px;
+    }
+
+    .tombstone-section-wrapper {
+        gap: 50px;
+    }
+
+    .tombstone-section-description {
+        gap: 40px;
     }
 }
 
@@ -52,11 +108,11 @@
     /* SLOGAN CONTAINER | SLOGAN BOX */
     .slogans-container {
         padding: 0;
-        gap: 32px;
+        gap: 25px;
     }
 
     .slogan-box {
-        width: 82px;
+        width: 70px;
     }
 
     /* HEADER */
@@ -104,6 +160,7 @@
 
     .intro-wrapper {
         margin: 10px 0 0;
+        padding: 0 30px;
     }
 
     .intro-title-box {
@@ -111,7 +168,7 @@
     }
 
     .intro-search-bar-box {
-        width: 250px;
+        max-width: 250px;
         justify-content: center;
         align-items: center;
     }
@@ -148,14 +205,14 @@
     }
 
     .about-office-content {
-        padding: 75px 0 0;
+        padding: 70px 15px 0;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
     }
 
     .about-office-title-container {
-        width: 320px;
+        max-width: 380px;
         align-items: flex-end;
         justify-content: center;
         gap: 35px;
@@ -165,7 +222,7 @@
         font-size: 24px;
         line-height: 30px;
         color: var(--primary-white);
-        inline-size: 110px;
+        max-inline-size: 110px;
         overflow-wrap: break-word;
         text-align: center;
     }
@@ -174,7 +231,7 @@
         font-size: 12px;
         line-height: 12px;
         color: white;
-        inline-size: 320px;
+        max-inline-size: 320px;
         overflow-wrap: break-word;
     }
 
@@ -194,7 +251,7 @@
         padding: 0;
         flex-direction: column;
         align-items: center;
-        gap: 35px;
+        gap: 10px;
     }
 
     .design-section-wrapper {
@@ -204,10 +261,20 @@
     .design-section-content {
         gap: 40px;
     }
+
+    .design-title-container {
+        padding: 0 20px;
+        gap: 15px;
+    }
     
     .design-caption {
-        inline-size: 300px;
+        max-inline-size: 300px;
     }
+
+    .monument-360Deg {
+        width: 280px;
+    }
+    
     
     /* FOOTER */
     .footer-wrapper {
@@ -238,4 +305,48 @@
 
         background-position: 75%;
     }
+
+    .footer-creator-text, 
+    .footer-copy-text {
+        font-size: 18px;
+    }
+
+    .footer-kodala-logo {
+        width: 60px;
+        height: 85px;
+    }
+}
+
+@media(max-width: 320px) {
+    .slogan-box {
+        width: 60px;
+    }
+
+    .design-caption {
+        max-inline-size: 200px;
+    }
+
+    .monument-360Deg {
+        width: 200px;
+    }
+
+    .working-hours-container {
+        height: 144px;
+        width: 200px;
+    }
+
+    .footer-social-links-container {
+        padding: 0 20px;
+    }
+
+    .whatsup-caption, 
+    .email-caption,
+    .footer-address {
+        font-size: 14px;
+    }
+
+    .footer-address {
+        max-inline-size: 200px;
+    }
+
 }

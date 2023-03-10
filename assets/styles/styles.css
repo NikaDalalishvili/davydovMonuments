@@ -393,7 +393,8 @@ header.header-hide {
 }
 
 .intro-title-box {
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -402,7 +403,8 @@ header.header-hide {
 }
 
 .intro-search-bar-box {
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -530,7 +532,8 @@ header.header-hide {
 }
 
 .about-office-title-container {
-    width: 580px;
+    max-width: 580px;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -623,6 +626,7 @@ header.header-hide {
 }
 
 .design-title-container {
+    padding: 0 50px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -632,7 +636,7 @@ header.header-hide {
 }
 
 .design-caption {
-    inline-size: 500px;
+    max-inline-size: 500px;
     overflow-wrap: break-word;
 }
 
@@ -643,7 +647,7 @@ header.header-hide {
 .footer-wrapper {
     width: 100%;
     /* margin: 75px 0; */
-    padding: 75px 0;
+    padding: 0 0 75px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -712,10 +716,18 @@ header.header-hide {
     margin: 0 20px;
     padding: 15px 0 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     border-top: 2px solid var(--primary-blue-li);
 
-    gap: 30px;
+    gap: 15px;
+}
+
+.footer-copy-left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-kodala-logo {

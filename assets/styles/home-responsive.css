@@ -158,6 +158,16 @@
         height: 230px;
     }
 
+    .mobile-nav-creator-text, 
+    .mobile-nav-copy-text {
+        font-size: 18px;
+    }
+
+    .mobile-nav-kodala-logo {
+        width: 60px;
+        height: 85px;
+    }
+
     .intro-wrapper {
         margin: 10px 0 0;
         padding: 0 30px;

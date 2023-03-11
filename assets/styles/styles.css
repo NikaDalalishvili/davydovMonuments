@@ -137,6 +137,7 @@ header.header-hide {
 
 .mobile-nav-content  {
     width: 100%;
+    padding: 0 20px;
 
     display: flex;
     flex-direction: column;
@@ -194,12 +195,52 @@ header.header-hide {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.mobile-nav-address-map {
+.mobile-nav-copy-container {
     width: 100%;
-    height: 250px;
+    margin: 0 20px;
+    padding: 15px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top: 2px solid var(--primary-blue-li);
+
+    gap: 15px;
+}
+
+.mobile-nav-copy-left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav-kodala-logo { 
+    /* width: 230px;
+    height: 320px; */
+
+    width: 80px;
+    height: 110px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mobile-nav-creators-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mobile-nav-creator-text,
+.mobile-nav-copy-text {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--primary-blue-li);
 }
 
 /* PAGE LOGO */
@@ -730,7 +771,7 @@ header.header-hide {
     align-items: center;
 }
 
-.footer-kodala-logo {
+.footer-kodala-logo { 
     /* width: 230px;
     height: 320px; */
 

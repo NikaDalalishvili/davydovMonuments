@@ -1,18 +1,20 @@
 // Get the header element
-let header = document.querySelector('header');
-let headerH = header.offsetHeight;
+let headerB = document.querySelector('.header-btns');
+let headerH = headerB.offsetHeight;
+let mobileNav = document.querySelector('.mobile-nav');
 
 let lastScrollTop = 0;
 
 window.addEventListener('scroll', function () {
   let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
   if (currentScrollTop > lastScrollTop &&
-      window.pageYOffset >= headerH) {
+      window.pageYOffset >= headerH &&
+      !mobileNav.classList.contains('is-active')) {
     // scrolling down
-    header.classList.add('header-hide');
+    headerB.classList.add('header-hide');
   } else {
     // scrolling up
-    header.classList.remove('header-hide');
+    headerB.classList.remove('header-hide');
   }
   lastScrollTop = currentScrollTop;
 });

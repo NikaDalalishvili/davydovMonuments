@@ -14,10 +14,8 @@ window.addEventListener('scroll', function () {
     // scrolling down
     headerB.classList.add('header-hide');
     headerNav.classList.add('header-nav-hide');
-    console.log(headerH);
   } else {
     // scrolling up
-    console.log(window.pageYOffset + " PageY");
     headerB.classList.remove('header-hide');
     headerNav.classList.remove('header-nav-hide');
   }
